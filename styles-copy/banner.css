@@ -1,0 +1,104 @@
+.computador {
+    display: none;
+}
+
+.sobreMim {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2em;
+    background: transparent;
+    border: 0.25em solid var(--corFundo-sec);
+    border-radius: 1em;
+}
+
+.sobreMim__titulo {
+    color: var(--corFundo-sec);
+    font-family: var(--fontePrinci);
+    font-weight: 700;
+    padding-top: 0.75em;
+    font-size: 1.5em;
+}
+
+.sobreMim__texto {
+    margin: 1em;
+    font-size: 0.75em;
+    color: var(--corFundo-sec);
+}
+
+.sobreMim__texto-destaque {
+    color: var(--corFundo-sec);
+}
+
+.linha {
+    margin-right: 5em;
+    margin-left: 5em;
+    color: var(--corFundo-sec);
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 3em;
+    }
+
+    .banner__container-link {
+        gap: 2.5em;
+        margin-top: 1em;
+    }
+
+    .sobreMim__titulo {
+        font-size: 5em;
+    }
+
+    .sobreMim__texto {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sobreMim__descricao-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sobreMim__descricao {
+        border: 0.5em solid var(--corFundo-sec);
+        border-radius: 1.5em;
+        width: 90%;
+        margin-left: 2em;
+    }
+
+    .sobreMim {
+        align-items: center;
+    }
+
+    .sobreMim__titulo {
+        font-size: 2.5em;
+    }
+    .sobreMim__texto {
+        font-size: 2em;
+    }
+
+    .projetos-recentes {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        width: 50%;
+        margin: 1.5em 0 0 2em;
+        background: var(--corFundo-sec);
+        border-radius: 1em;
+        padding-bottom: 13.5em;
+    }
+
+    .projetos-recentes__titulo {
+        font-family: var(--fontePrinci);
+        font-size: 2em;
+        font-weight: 700;
+        text-align: center;
+        margin: 1em 0 0 0;
+        border-top: 0.1em solid var(--corFonte-destaque);
+        margin: 1em;
+        padding: 0.25em;
+    }
+}

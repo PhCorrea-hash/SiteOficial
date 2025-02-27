@@ -1,0 +1,27 @@
+@import url("styles-copy/header.css");
+@import url("styles-copy/banner.css");
+@import url("styles-copy/main.css");
+@import url("styles-copy/topicos.css");
+@import url("styles-copy/rodape.css");
+@import url("styles-copy/redessociais.css");
+
+:root {
+    
+    --corFundo-principal: rgb(84,9,150);
+    --corFundo-sec: #FFFFFF;
+    --vermelho: #F0461A;
+    --fonteDestaque: #3996FF;
+    --degrade: radial-gradient(circle, rgba(84,9,150,1) 0%, rgba(0,0,0,1) 100%);
+
+    --corFonte-destaque: #690189;
+
+    --fontePrinci: 'League Spartan', sans-serif;
+}
+
+body {
+    background: rgb(84,9,150);
+    background: radial-gradient(circle, rgba(84,9,150,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    margin: 0;
+    font-family: var(--fontePrinci)
+}
