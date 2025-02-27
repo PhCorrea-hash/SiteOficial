@@ -10,11 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="corpo">
+    <div class="" id="opacidade">
     <header class="cabecalho">
-        <img class="cabecalho-imagem" src="./assets/icons/menuIcon-50.svg" alt="">
-        <h1 class="cabecalho-titulo">Pedro<b class="texto-destaque">Corrêa</b></h1>
-        <img class="cabecalho-imagem" src="./assets/icons/perfilIcon-50.svg" alt="">
+        <div class="cabecalho-container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="index.html" class="lista-menu__link">Home</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="curriculo.html" class="lista-menu__link">Curriculo</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="programas.html" class="lista-menu__link">Programas</a>
+                </li>
+            </ul>
+            <h1 class="cabecalho-titulo">Pedro<b class="texto-destaque">Corrêa</b></h1>
+            <img class="cabecalho-imagem perfil" src="./assets/icons/perfilIcon-50.svg" alt="">
+        </div>
     </header>
 
     <aside class="nav">
@@ -32,163 +50,48 @@
         </div>
         <div class="nav-container-texto">
             <h2 class="nav-titulo">PORTIFÓLIO</h2>
-            <p class="nav-menu">Todas</p>
-            <img class="nav-img" src="./assets/icons/arrowDownIcon-80.svg" alt="">
+            <div class="nav-lista-container">
+                <input type="checkbox" id="nav-menu" class="nav-botao">
+                <label for="nav-menu" class="nav-rotulo">
+                    <span class="nav-menu-hamburguer-texto">Todas</span>
+                    <span class="nav-menu-hamburguer nav-imagem"></span>
+                </label>
+                <ul class="nav-lista-menu">
+                    <li class="nav-lista-menu__titulo">Filtros</li>
+                    <li class="nav-lista-menu__item">
+                        <button>Filtro</button>
+                    </li>
+                    <li class="nav-lista-menu__item">
+                        <button>Filtro</button>
+                    </li>
+                    <li class="nav-lista-menu__item">
+                        <button>Filtro</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- <img class="nav-img" src="./assets/icons/arrowDownIcon-80.svg" alt=""> -->
         </div>
     </aside>
 
     <section class="galeria">
         <div class="galeria-container">
-            <ul class="galeria-lista">
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
-
-                <li class="galeria-item">
-                    <img class="galeria-img" src="./assets/imgs/row-1-column-1.png" alt="">
-                    <div class="galeria-img-descricao">
-                        <h3 class="galeria-img-descricao-titulo">Imagem 1</h3>
-                        <p class="galeria-img-descricao-texto">Descrição</p>
-                        <p class="galeria-img-descricao-tamanho">250px X 250px</p>
-                    </div>
-                </li>
+            <ul class="galeria-lista" id="galeria-lista">
+                
             </ul>
         </div>
+    </div>
+        
+    </section>
+
+    <section class="galeria-principal vazio" id="galeria-principal">
+            
     </section>
 
     <footer class="rodape">
         <h2 class="rodape-texto">Pedro Henrique Martins Alves Corrêa</h2>
     </footer>
+
+    <script src="./scripts/galeria/main.js"></script>
+    <script src="./scripts/galeria/forEach.js"></script>
 </body>
 </html>

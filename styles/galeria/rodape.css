@@ -1,6 +1,7 @@
 .rodape {
     background-color: var(--corBranca);
     margin-top: 0.75rem;
+    padding-bottom: 1rem;
 }
 
 .rodape-texto {

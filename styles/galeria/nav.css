@@ -29,7 +29,7 @@
 
 @media (min-width: 720px) {
     .nav {
-        margin-top: 1.25rem;
+        margin-top: 1.5rem;
     }
 
     .nav-container {
@@ -47,6 +47,73 @@
         font-weight: 800;
         margin-left: 3rem;
         margin-right: 1rem;
+    }
+
+    .nav-menu-hamburguer {
+        width: 3rem;
+        height: 3rem;
+        background-image: url("/assets/icons/arrowDownIcon-80.svg");
+        background-size: 4rem;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+    }
+
+    .nav-rotulo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu-hamburguer-texto {
+        color: #E1DDDD;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .nav-botao {
+        display: none;
+    }
+
+    .nav-lista-menu {
+        display: none;
+        position: inherit;
+        left: 0;
+        top: 0;
+        width: 16.75vw;
+        gap: 1em;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-lista-menu__titulo {
+        background: #E1DDDD;
+        color: #000;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .nav-lista-menu__item {
+        background: rgb(84,9,150);
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding: 0.75rem 0;
+        text-align: center;
+    }
+
+    .nav-botao:checked~.nav-lista-menu {
+        display: block;
+    }
+
+    /* .nav-botao:checked~.nav-rotulo {
+        background: var(--corBranca);
+    } */
+
+    .nav-botao:checked~.nav-menu-hamburguer-texto {
+        color: #000;
     }
 
     .nav-menu {
