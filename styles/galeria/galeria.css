@@ -1,0 +1,55 @@
+.galeria {
+    margin: 1.5rem 0 0 1rem;
+}
+
+.galeria-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.galeria-item {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.galeria-img {
+    width: 12.5rem;
+    height: 12.5rem;
+    box-shadow: 10px 10px 5px #000;
+}
+
+.galeria-img-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.galeria-img-descricao-titulo, .galeria-img-descricao-texto, .galeria-img-descricao-tamanho {
+    color: var(--corBranca);
+    font-weight: 600;
+}
+
+.galeria-img-descricao-titulo {
+    font-size: 1.5rem;
+}
+
+.galeria-img-descricao-texto, .galeria-img-descricao-tamanho {
+    font-size: 1.25rem;
+}
+
+@media (min-width: 720px) {
+    .galeria-container {
+        margin-right: 1rem;
+    }
+
+    .galeria-lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .galeria-item {
+        flex-direction: column;
+    }
+}

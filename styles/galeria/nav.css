@@ -1,0 +1,57 @@
+.nav {
+    display: flex;
+    margin-top: 0.75rem;
+}
+
+.nav-container {
+    display: flex;
+    overflow: scroll;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.nav-item {
+    background: var(--corBranca);
+    color: var(--corPreta);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.nav-item:hover {
+    background: #f6f6f6;
+}
+
+.nav-container-texto {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .nav {
+        margin-top: 1.25rem;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container-texto {
+        display: flex;
+        color: var(--corBranca);
+        align-items: center;
+    }
+
+    .nav-titulo {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+
+    .nav-menu {
+        color: #E1DDDD;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+}

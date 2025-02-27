@@ -1,0 +1,12 @@
+.rodape {
+    background-color: var(--corBranca);
+    margin-top: 0.75rem;
+}
+
+.rodape-texto {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--textoDestaque);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
