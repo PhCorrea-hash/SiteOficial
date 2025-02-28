@@ -1,7 +1,6 @@
 .redes {
     display: flex;
     background: var(--corBranca);
-    height: 120px;
     margin-top: 1.5rem;
     justify-content: center;
 }
@@ -12,14 +11,15 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    margin: 0.75rem 0.5rem;
+    padding: 1.5rem 0;
+    margin: 0 0.5rem;
 }
 
 .redes-lista-item {
     background: linear-gradient(180deg, #590996 0%, #000 100%), linear-gradient(180deg, #FFF 0%, #999 100%);
     width: 30%;
-    height: 30%;
-    border-radius: 10px;
+    height: 40%;
+    border-radius: 16px;
 }
 
 .redes-lista-item-link {
@@ -87,4 +87,83 @@
     color: var(--textoDestaque);
     font-size: 1.25rem;
     font-weight: 800;
+}
+
+.rodape-container {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .redes {
+        padding: 2em 0;
+    }
+
+    .redes-lista {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .redes-lista-item {
+        border-radius: 32px;
+    }
+
+    .redes-lista-item-img {
+        margin-left: 0.75rem;
+    }
+
+    .redes-lista-item-texto {
+        font-size: 1.75rem;
+    }
+
+    .habilidades-lista {
+        margin: 0 1rem;
+        gap: 1rem;
+    }
+
+    .habilidades-lista-item-texto {
+        font-size: 2rem;
+        width: 30rem;
+    }
+
+    .rodape-texto {
+        display: none;
+    }
+
+    .rodape-container {
+        display: flex;
+    }
+
+    .rodape-container-titulo {
+        font-size: 1.75rem;
+        margin: 2rem 0.75rem;
+        color: var(--textoDestaque);
+        font-weight: 600;
+    }
+
+    .rodape-lista {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        width: 50%;
+    }
+
+    .rodape-lista-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 75%;
+        margin: 0.75rem 0;
+        border-left: 3px solid #590996;
+        padding-left: 1rem;
+    }
+
+    .rodape-lista-img {
+        width: 25%;
+    }
+
+    .rodape-lista-link {
+        font-size: 1.25rem;
+        color: var(--textoDestaque);
+        font-weight: 700;
+    }
 }

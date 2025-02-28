@@ -75,3 +75,34 @@
 .texto-destaque {
     color: #11021E;
 }
+
+@media (min-width: 720px) {
+    .cabecalho {
+        margin-top: 0.5rem;
+    }
+
+    .lista-menu {
+        width: 40vw;
+    }
+
+    .lista-menu__titulo {
+        font-size: 1.75rem;
+    }
+
+    .lista-menu__item {
+        font-size: 1.5rem;
+    }
+
+    .cabecalho-titulo {
+        font-size: 3rem;
+    }
+
+    .cabecalho__menu-hamburguer {
+        background-size: 4rem;
+    }
+
+    .perfil {
+        width: 7.5%;
+        
+    }
+}

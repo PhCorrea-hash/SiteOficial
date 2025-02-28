@@ -2,6 +2,7 @@
 @import url("./main.css");
 @import url("./paginas.css");
 @import url("./redes.css");
+@import url("./");
 
 :root {
     --fontePrincipal: "League Spartan", sans-serif;
