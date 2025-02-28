@@ -4,22 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Corrêa</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <script src="script.js"></script>
-    <link 
-        rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="./styles/principal/styles.css">
 </head>
 <body>
-    
     <header class="cabecalho">
-        <div class="cabecalho__container">
+        <div class="cabecalho-container">
             <input type="checkbox" id="menu" class="container__botao">
             <label for="menu" class="container__rotulo">
                 <span class="cabecalho__menu-hamburguer container__imagem"></span>
@@ -27,223 +20,119 @@
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item">
-                    <a href="curriculo.html" class="lista-menu__link">Curriculo</a>
+                    <a href="galeria.html" class="lista-menu__link">Portifólio</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="galeria.html" class="lista-menu__link">Portifólio</a>
+                    <a href="curriculo.html" class="lista-menu__link">Curriculo</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="programas.html" class="lista-menu__link">Programas</a>
                 </li>
             </ul>
-            <h1 class="cabecalho__titulo">Pedro<b class="cabecalho__titulo-destaque">Corrêa</b></h1>
+            <h1 class="cabecalho-titulo">Pedro<b class="texto-destaque">Corrêa</b></h1>
+            <img class="cabecalho-imagem perfil" src="./assets/icons/perfilIconWhite-50.svg" alt="">
         </div>
-        <div class="cabecalho__container-links">
-            <a class="cabecalho__link" href="curriculo.html">Sobre mim</a>
-            <a class="cabecalho__link" href="programas.html">Meus projetos</a>
-            <a class="cabecalho__link" href="#">Meus cursos</a>
-        </div>
-        <a class="cabecalho__link" href="curriculo.html" alt="Meu perfil"><img class="cabecalho__imagem-user" src="./imgs/PerfilIcon.svg" alt="Meu perfil"></a>
     </header>
 
-    <section class="sobreMim">
-        <div class="carrossel__container computador">
-            <div class="swiper">
-                
-                <div class="swiper-pagination"></div>
-    
-                <div class="swiper-wrapper">
-          
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-1.png" alt="Livro sobre Portugol"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-2.png" alt="Livro sobre liderença"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-3.png" alt="Livro sobre Front-End"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-4.png" alt="Livro sobre Portugol"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-5.png" alt="Livro sobre liderença"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-6.png" alt="Livro sobre Front-End"></div>
-                    ...
-                </div>
-        
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <div class="carrossel__link-container computador">
-                    <a class="carrossel__link computador" href="galeria.html"><img class="carrossel__imagem" src="./imgs/PortifolioIcon.svg" alt="Acesse meu portifolio"></a>
-                </div>
-      
-            </div>
-            </div>
-            <script>
-            const swiperr = new Swiper('.swiper', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-              
-                // If we need pagination
-                pagination: {
-                  el: '.swiper-pagination',
-                },
-              
-                // Navigation arrows
-                navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                },
-              
-                // And if we need scrollbar
-                scrollbar: {
-                  el: '.swiper-scrollbar',
-                },
-              });
-            </script>
-            <div class="sobreMim__descricao-container">
-               <div class="sobreMim__descricao">
-                  <h2 class="sobreMim__titulo">Sobre mim</h2>
-                  <p class="sobreMim__texto">Profissional com <b class="sobreMim__texto-destaque">Experiência em vendas, atendimento ao cliente, administração de redes sociais e gestão administrativa básica.</b> Habilidade em comunicação interpessoal, negociação e resolução de problemas, garantindo um atendimento eficiente e orientado à satisfação do cliente. Experiência na <b class="sobreMim__texto-destaque">criação e gerenciamento de conteúdos para redes sociais, desenvolvimento de estratégias para engajamento do público e fortalecimento da marca</b>. Conhecimento em processos administrativos, incluindo organização de documentos, controle financeiro básico e suporte operacional.</p>
-               </div>
-               <div class="projetos-recentes computador">
-                  <h2 class="projetos-recentes__titulo">Meus Projetos Recentes</h2>
-                  <p class="projetos-recentes__texto"></p>
-               </div>
-               
-            </div> 
+    <section class="main">
+        <p class="main-texto"></p>
+        <!-- <img class="main-img" src="./assets/icons/icons8-about-me-50 (1).png" alt=""> -->
     </section>
 
     <hr class="linha">
 
-        <section class="carrossel">
-            <h2 class="carrossel__titulo celular">Projetos Recentes</h2>
-    
-            <div class="carrossel__container celular">
-            <div class="swiper">
-                
-                <div class="swiper-pagination"></div>
-    
-                <div class="swiper-wrapper">
-          
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-1.png" alt="Livro sobre Portugol"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-2.png" alt="Livro sobre liderença"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-3.png" alt="Livro sobre Front-End"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-4.png" alt="Livro sobre Portugol"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-5.png" alt="Livro sobre liderença"></div>
-                    <div class="swiper-slide"><img src="./imgs/swiper/row-1-column-6.png" alt="Livro sobre Front-End"></div>
-                    ...
-                </div>
-        
-                <div class="swiper-button-prev arrow-left"></div>
-                <div class="swiper-button-next arrow-right"></div>
-      
-            </div>
-            </div>
-            <script>
-            const swiper = new Swiper('.swiper', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-              
-                // If we need pagination
-                pagination: {
-                  el: '.swiper-pagination',
-                },
-              
-                // Navigation arrows
-                navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                },
-              
-                // And if we need scrollbar
-                scrollbar: {
-                  el: '.swiper-scrollbar',
-                },
-              });
-            </script>
-            <div class="carrossel__link-container celular">
-                <a class="carrossel__link celular" href="galeria.html"><img class="carrossel__imagem" src="./imgs/PortifolioIcon.svg" alt="Acesse meu portifolio"></a>
-            </div>
-    </section>
+    <section class="paginas">
+        <div class="paginas-container">
 
-    <section class="topicos">
-        <h2 class="topicos__titulo">Principais tópicos</h2>
+        </div>
 
-        <div class="topicos__container-principal">
-
-            <div class="topicos__container">
-                <h3 class="topicos__container-titulo">Programas</h3>
-                <p class="topicos__container-texto">Confira meus programas</p>
-                <a class="topicos__container-link" href="programas.html"><img class="topicos__container-imagem" src="./imgs/code-48.png" alt="Confira meus programs"></a>
-            </div>
-
-            <div class="topicos__container">
-                <h3 class="topicos__container-titulo">Designs</h3>
-                <p class="topicos__container-texto">Confira meus designs</p>
-                <a class="topicos__container-link" href="galeria.html"><img class="topicos__container-imagem" src="./imgs/camera-48.png" alt="Confira meus designs"></a>
-
-            </div>
-
-            <div class="topicos__container">
-                <h3 class="topicos__container-titulo">Currículo</h3>
-                <p class="topicos__container-texto">Confira meu currículo</p>
-                <a class="topicos__container-link" href="curriculo.html"><img class="topicos__container-imagem" src="./imgs/document-2-48.png" alt="Confira meu currículo"></a>
-
-            </div>
+        <div class="paginas-container">
 
         </div>
     </section>
 
-    <section class="redesSociais">
-        <h2 class="redesSociais__titulo">Redes Sociais</h2>
-
-        <div class="redesSociais-container">
-            <a class="redesSociais-container__link" href="https://wa.me/5517997121851">WhatsApp</a>
-
-            <a class="redesSociais-container__link" href="https://www.instagram.com/phmcorrea/">Instagram</a>
-
-            <a class="redesSociais-container__link" href="mailto:pedrohenriquemartinscorrea@gmail.com">E-Mail</a>
-        </div>
-
-        <div class="redesSociais-container">
-            <a class="redesSociais-container__link" href="https://github.com/PhCorrea-hash">GitHub</a>
-
-            <a class="redesSociais-container__link" href="https://www.linkedin.com/in/pedro-henrique-martins-alves-corrêa-464484317/">LinkedIn</a>
-
-            <a class="redesSociais-container__link" href="https://vercel.com/phcorrea-hashs-projects">Vercel</a>
-        </div>
-    </section>
-
-    <section class="rodape">
-        <h2 class="rodape__titulo">Pedro Henrique Martins Alves Corrêa</h2>
-        <div class="rodape__container">
-            <h3 class="rodape__container-titulo">Pedro Henrique Martins Alves Corrêa</h3>
-        <ul class="lista-menu-rodape">
-            <li class="lista-menu__item-rodape">
-                <img class="lista-menu-rodape-imagem" src="./imgs/ProgrammingRodape.svg" alt="Minha programação">
-                <a href="#" class="lista-menu__link-rodape">Programação</a>
+    <section class="redes">
+        <ul class="redes-lista">
+            <li class="redes-lista-item">
+                <a class="redes-lista-item-link">
+                    <img class="redes-lista-item-img" src="./assets/icons/envelope.svg" alt="">
+                    <p class="redes-lista-item-texto">E-mail</p>
+                </a>
             </li>
-            <li class="lista-menu__item-rodape">
-                <img class="lista-menu-rodape-imagem" src="./imgs/DesignsRodape.svg" alt="Meus designs">
-                <a href="galeria.html" class="lista-menu__link-rodape">Designs</a>
+
+            <li class="redes-lista-item">
+                <a class="redes-lista-item-link">
+                    <img class="redes-lista-item-img" src="./assets/icons/github.svg" alt="">
+                    <p class="redes-lista-item-texto">GitHub</p>
+                </a>
             </li>
-            <li class="lista-menu__item-rodape">
-                <img class="lista-menu-rodape-imagem" src="./imgs/GitHubRodape.svg" alt="Meus repositórios">
-                <a href="https://github.com/PhCorrea-hash" class="lista-menu__link-rodape">Repositórios</a>
+
+            <li class="redes-lista-item">
+                <a class="redes-lista-item-link">
+                    <img class="redes-lista-item-img" src="./assets/icons/linkedin.svg" alt="">
+                    <p class="redes-lista-item-texto">LinkedIn</p>
+                </a>
+            </li>
+
+            <li class="redes-lista-item">
+                <a class="redes-lista-item-link">
+                    <img class="redes-lista-item-img" src="./assets/icons/whatsapp.svg" alt="">
+                    <p class="redes-lista-item-texto">WhatsApp</p>
+                </a>
+            </li>
+
+            <li class="redes-lista-item">
+                <a class="redes-lista-item-link">
+                    <img class="redes-lista-item-img" src="" alt="">
+                </a>
+            </li>
+
+            <li class="redes-lista-item">
+                <a class="redes-lista-item-link">
+                    <img class="redes-lista-item-img" src="" alt="">
+                </a>
             </li>
         </ul>
+    </section>
 
-        <ul class="lista-menu-rodape">
-            <li class="lista-menu__item-rodape">
-                <img class="lista-menu-rodape-imagem" src="./imgs/LinkedInRodape.svg" alt="Meu linkedin">
-                <a href="#" class="lista-menu__link-rodape">LinkedIn</a>
+    <section class="habilidades">
+        <ul class="habilidades-lista">
+            <li class="habilidades-lista-item">
+                <img class="habilidades-lista-item-img" src="./assets/icons/htmlIcon.png">
+                <p class="habilidades-lista-item-texto">Possuo conhecimento avançado em HTML, incluindo a estruturação de páginas com elementos semânticos, criação de formulários interativos, incorporação de mídias, otimização para acessibilidade e boas práticas de SEO. Tenho experiência na integração com CSS e JavaScript, garantindo páginas dinâmicas e bem estruturadas.</p>
             </li>
-            <li class="lista-menu__item-rodape">
-                <img class="lista-menu-rodape-imagem" src="./imgs/FrontEndRodape.svg" alt="Meus projetos Front-End">
-                <a href="#" class="lista-menu__link-rodape">Front-End</a>
+
+            <li class="habilidades-lista-item">
+                <img class="habilidades-lista-item-img" src="./assets/icons/javascriptIcon.png">
+                <p class="habilidades-lista-item-texto">Possuo conhecimento avançado em JavaScript, incluindo manipulação do DOM, eventos, funções assíncronas, requisições API (fetch/AJAX), programação orientada a objetos e utilização de ES6+. Tenho experiência com bibliotecas e frameworks para otimização do desenvolvimento web.</p>
             </li>
-            <li class="lista-menu__item-rodape">
-                <img class="lista-menu-rodape-imagem" src="./imgs/BackEndRodape.svg" alt="Meus projetos Back-End">
-                <a href="#" class="lista-menu__link-rodape">Back-End</a>
+
+            <li class="habilidades-lista-item">
+                <img class="habilidades-lista-item-img" src="./assets/icons/cssIcon.png">
+                <p class="habilidades-lista-item-texto">Possuo conhecimento avançado em CSS, abrangendo estilização responsiva, flexbox, grid, animações, transições e pré-processadores como SASS. Domino técnicas de design moderno, organização modular de estilos e boas práticas para otimização de performance.</p>
+            </li>
+
+            <li class="habilidades-lista-item">
+                <img class="habilidades-lista-item-img" src="./assets/icons/figmaIcon.png">
+                <p class="habilidades-lista-item-texto">Possuo conhecimento avançado em Figma, incluindo design de interfaces responsivas, criação de protótipos interativos, uso de componentes reutilizáveis, design system e colaboração em equipe para desenvolvimento de produtos digitais.</p>
+            </li>
+
+            <li class="habilidades-lista-item">
+                <img class="habilidades-lista-item-img" src="./assets/icons/jsonIcon.png">
+                <p class="habilidades-lista-item-texto">Possuo conhecimento avançado em JSON, compreendendo sua estrutura, manipulação de dados, integração com APIs, formatação e validação, além do uso em aplicações web para comunicação eficiente entre front-end e back-end.</p>
+            </li>
+
+            <li class="habilidades-lista-item">
+                <img class="habilidades-lista-item-img">
+                <p class="habilidades-lista-item-texto"></p>
             </li>
         </ul>
-        </div>
     </section>
+
+    <footer class="rodape">
+        <h2 class="rodape-texto">Pedro Henrique Martins Alves Corrêa</h2>
+    </footer>
+
+    <script src="./scripts/principal/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,89 @@
+.redes {
+    display: flex;
+    background: var(--corBranca);
+    height: 120px;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.redes-lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.75rem 0.5rem;
+}
+
+.redes-lista-item {
+    background: linear-gradient(180deg, #590996 0%, #000 100%), linear-gradient(180deg, #FFF 0%, #999 100%);
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.redes-lista-item-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--corBranca);
+    text-align: center;
+    font-size: 1rem;
+    gap: 0.15rem;
+}
+
+.redes-lista-item-texto {
+    margin-top: 0.25rem;
+}
+
+.redes-lista-item-img {
+    width: 20%;
+    margin-left: 0.25rem;
+}
+
+.habilidades {
+    margin-top: 1rem;
+    background: transparent;
+}
+
+.habilidades-lista {
+    display: flex;
+    background: transparent;
+    overflow: scroll;
+}
+
+.habilidades-lista-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    background: var(--corBranca);
+    border-radius: 10px;
+}
+
+.habilidades-lista-item-img {
+    margin-top: 0.75rem;
+    width: 50%;
+}
+
+.habilidades-lista-item-texto {
+    width: 18rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem 1rem;
+}
+
+.rodape {
+    background-color: var(--corBranca);
+    margin-top: 0.75rem;
+}
+
+.rodape-texto {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--textoDestaque);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
